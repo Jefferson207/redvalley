@@ -1,0 +1,96 @@
+{
+  "brand": {
+    "name": "Explora Red Valley",
+    "tagline": "ATV tours to Rainbow Mountain"
+  },
+  "nav": {
+    "home": "Home",
+    "experiences": "Experiences",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "reserve": "Book"
+  },
+  "reservation": {
+    "title": "Book in 2 steps",
+    "date": "Preferred date",
+    "schedule": "Time",
+    "adults": "Adults",
+    "children": "Children",
+    "atvs": "ATVs",
+    "mode": "Mode",
+    "shared": "Shared",
+    "individual": "Individual",
+    "fullName": "Full name",
+    "country": "Country or nationality",
+    "phone": "Phone",
+    "email": "Email",
+    "hotel": "Hotel or accommodation",
+    "pickup": "Hotel pickup",
+    "yes": "Yes",
+    "no": "No",
+    "comments": "Additional requests",
+    "summary": "View summary",
+    "total": "Reference total",
+    "totalNote": "The company will confirm availability and final price on WhatsApp.",
+    "confirm": "Confirm and open WhatsApp",
+    "loading": "Preparing WhatsApp..."
+  },
+  "floatingWhatsapp": {
+    "aria": "Ask on WhatsApp",
+    "message": "How can we help you?"
+  },
+  "footer": {
+    "company": {
+      "kicker": "Premium adventure in Cusco",
+      "description": "ATV adventure experiences, nature and unforgettable Cusco landscapes, with close service and organized routes.",
+      "legalName": "Legal name",
+      "ruc": "Tax ID",
+      "serviceType": "Service type"
+    },
+    "quickLinks": {
+      "title": "Quick links",
+      "items": [
+        { "label": "Home", "href": "/#inicio" },
+        { "label": "Experiences", "href": "/#experiencias" },
+        { "label": "About", "href": "/nosotros" },
+        { "label": "Gallery", "href": "/#galeria" },
+        { "label": "Contact", "href": "/#contacto" },
+        { "label": "Rates", "href": "/#experiencias" },
+        { "label": "FAQ", "href": "/faq" },
+        { "label": "Complaints Book", "href": "/legal/libro-reclamaciones" }
+      ]
+    },
+    "legal": {
+      "title": "Legal and safety",
+      "notice": "We publish information related to personal data protection, commercial conditions, ESNNA prevention and traveler safety.",
+      "items": [
+        { "label": "Privacy Policy", "href": "/legal/politica-privacidad" },
+        { "label": "Personal Data Protection Policy", "href": "/legal/proteccion-datos-personales" },
+        { "label": "Terms and Conditions", "href": "/legal/terminos-condiciones" },
+        { "label": "Cookie Policy", "href": "/legal/politica-cookies" },
+        { "label": "Payment Methods", "href": "/legal/medios-pago" },
+        { "label": "Cancellation Policy", "href": "/legal/politica-cancelacion" },
+        { "label": "Complaints Book", "href": "/legal/libro-reclamaciones" },
+        { "label": "ESNNA/MINCETUR Information", "href": "/legal/esnna-mincetur" }
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Booking email",
+      "schedule": "Opening hours",
+      "location": "Location",
+      "maps": "Open Google Maps",
+      "whatsappButton": "Ask on WhatsApp"
+    },
+    "bottom": {
+      "rights": "All rights reserved.",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "developedBy": "Developed by TuPaginaWeb.pe"
+    }
+  }
+}

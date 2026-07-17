@@ -1,0 +1,96 @@
+{
+  "brand": {
+    "name": "Explora Red Valley",
+    "tagline": "Passeios de quadriciclo para a Montanha de 7 Cores"
+  },
+  "nav": {
+    "home": "Inicio",
+    "experiences": "Experiencias",
+    "about": "Sobre nos",
+    "gallery": "Galeria",
+    "faq": "Perguntas",
+    "contact": "Contato",
+    "reserve": "Reservar"
+  },
+  "reservation": {
+    "title": "Reserve em 2 passos",
+    "date": "Data desejada",
+    "schedule": "Horario",
+    "adults": "Adultos",
+    "children": "Criancas",
+    "atvs": "Quadriciclos",
+    "mode": "Modalidade",
+    "shared": "Compartilhada",
+    "individual": "Individual",
+    "fullName": "Nome completo",
+    "country": "Pais ou nacionalidade",
+    "phone": "Celular",
+    "email": "E-mail",
+    "hotel": "Hotel ou hospedagem",
+    "pickup": "Busca no hotel",
+    "yes": "Sim",
+    "no": "Nao",
+    "comments": "Solicitacoes adicionais",
+    "summary": "Ver resumo",
+    "total": "Total referencial",
+    "totalNote": "A empresa confirmara disponibilidade e preco final pelo WhatsApp.",
+    "confirm": "Confirmar e abrir WhatsApp",
+    "loading": "Preparando WhatsApp..."
+  },
+  "floatingWhatsapp": {
+    "aria": "Consultar pelo WhatsApp",
+    "message": "Como podemos ajudar?"
+  },
+  "footer": {
+    "company": {
+      "kicker": "Aventura premium em Cusco",
+      "description": "Experiencias de aventura em quadriciclos, natureza e paisagens inesqueciveis de Cusco, com atendimento proximo e percursos organizados.",
+      "legalName": "Razao social",
+      "ruc": "RUC",
+      "serviceType": "Tipo de servico"
+    },
+    "quickLinks": {
+      "title": "Links rapidos",
+      "items": [
+        { "label": "Inicio", "href": "/#inicio" },
+        { "label": "Experiencias", "href": "/#experiencias" },
+        { "label": "Sobre nos", "href": "/nosotros" },
+        { "label": "Galeria", "href": "/#galeria" },
+        { "label": "Contato", "href": "/#contacto" },
+        { "label": "Tabela de precos", "href": "/#experiencias" },
+        { "label": "Perguntas frequentes", "href": "/faq" },
+        { "label": "Livro de Reclamacoes", "href": "/legal/libro-reclamaciones" }
+      ]
+    },
+    "legal": {
+      "title": "Legal e seguranca",
+      "notice": "Publicamos informacoes relacionadas a protecao de dados pessoais, condicoes comerciais, prevencao ESNNA e seguranca do viajante.",
+      "items": [
+        { "label": "Politica de Privacidade", "href": "/legal/politica-privacidad" },
+        { "label": "Politica de Protecao de Dados Pessoais", "href": "/legal/proteccion-datos-personales" },
+        { "label": "Termos e Condicoes", "href": "/legal/terminos-condiciones" },
+        { "label": "Politica de Cookies", "href": "/legal/politica-cookies" },
+        { "label": "Meios de Pagamento", "href": "/legal/medios-pago" },
+        { "label": "Politica de cancelamento", "href": "/legal/politica-cancelacion" },
+        { "label": "Livro de Reclamacoes", "href": "/legal/libro-reclamaciones" },
+        { "label": "Informacao ESNNA/MINCETUR", "href": "/legal/esnna-mincetur" }
+      ]
+    },
+    "contact": {
+      "title": "Contato",
+      "address": "Endereco",
+      "phone": "Telefone",
+      "email": "E-mail de reservas",
+      "schedule": "Horario de atendimento",
+      "location": "Localizacao",
+      "maps": "Abrir Google Maps",
+      "whatsappButton": "Consultar pelo WhatsApp"
+    },
+    "bottom": {
+      "rights": "Todos os direitos reservados.",
+      "privacy": "Privacidade",
+      "terms": "Termos",
+      "developedBy": "Desenvolvido por TuPaginaWeb.pe"
+    }
+  }
+}

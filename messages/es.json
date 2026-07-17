@@ -1,0 +1,96 @@
+{
+  "brand": {
+    "name": "Explora Red Valley",
+    "tagline": "Cuatrimotos hacia la Montana de 7 Colores"
+  },
+  "nav": {
+    "home": "Inicio",
+    "experiences": "Experiencias",
+    "about": "Nosotros",
+    "gallery": "Galeria",
+    "faq": "Preguntas frecuentes",
+    "contact": "Contacto",
+    "reserve": "Reservar"
+  },
+  "reservation": {
+    "title": "Reserva en 2 pasos",
+    "date": "Fecha deseada",
+    "schedule": "Horario",
+    "adults": "Adultos",
+    "children": "Ninos",
+    "atvs": "Cuatrimotos",
+    "mode": "Modalidad",
+    "shared": "Compartida",
+    "individual": "Individual",
+    "fullName": "Nombre completo",
+    "country": "Pais o nacionalidad",
+    "phone": "Celular",
+    "email": "Correo electronico",
+    "hotel": "Hotel o alojamiento",
+    "pickup": "Recojo desde hotel",
+    "yes": "Si",
+    "no": "No",
+    "comments": "Solicitudes adicionales",
+    "summary": "Ver resumen",
+    "total": "Total referencial",
+    "totalNote": "La empresa confirmara disponibilidad y precio final por WhatsApp.",
+    "confirm": "Confirmar y abrir WhatsApp",
+    "loading": "Preparando WhatsApp..."
+  },
+  "floatingWhatsapp": {
+    "aria": "Consultar por WhatsApp",
+    "message": "En que podemos ayudarte?"
+  },
+  "footer": {
+    "company": {
+      "kicker": "Aventura premium en Cusco",
+      "description": "Experiencias de aventura en cuatrimotos, naturaleza y paisajes inolvidables del Cusco, con atencion cercana y recorridos organizados.",
+      "legalName": "Razon social",
+      "ruc": "RUC",
+      "serviceType": "Tipo de servicio"
+    },
+    "quickLinks": {
+      "title": "Enlaces rapidos",
+      "items": [
+        { "label": "Inicio", "href": "/#inicio" },
+        { "label": "Experiencias", "href": "/#experiencias" },
+        { "label": "Nosotros", "href": "/nosotros" },
+        { "label": "Galeria", "href": "/#galeria" },
+        { "label": "Contacto", "href": "/#contacto" },
+        { "label": "Tarifario", "href": "/#experiencias" },
+        { "label": "Preguntas frecuentes", "href": "/faq" },
+        { "label": "Libro de Reclamaciones", "href": "/legal/libro-reclamaciones" }
+      ]
+    },
+    "legal": {
+      "title": "Legal y seguridad",
+      "notice": "Publicamos informacion relacionada con la proteccion de datos personales, condiciones comerciales, prevencion ESNNA y seguridad del viajero.",
+      "items": [
+        { "label": "Politica de Privacidad", "href": "/legal/politica-privacidad" },
+        { "label": "Politica de Proteccion de Datos Personales", "href": "/legal/proteccion-datos-personales" },
+        { "label": "Terminos y Condiciones", "href": "/legal/terminos-condiciones" },
+        { "label": "Politica de Cookies", "href": "/legal/politica-cookies" },
+        { "label": "Medios de Pago", "href": "/legal/medios-pago" },
+        { "label": "Politica de cancelacion", "href": "/legal/politica-cancelacion" },
+        { "label": "Libro de Reclamaciones", "href": "/legal/libro-reclamaciones" },
+        { "label": "Informacion ESNNA/MINCETUR", "href": "/legal/esnna-mincetur" }
+      ]
+    },
+    "contact": {
+      "title": "Contacto",
+      "address": "Direccion",
+      "phone": "Telefono",
+      "email": "Correo de reservas",
+      "schedule": "Horario de atencion",
+      "location": "Ubicacion",
+      "maps": "Abrir Google Maps",
+      "whatsappButton": "Consultar por WhatsApp"
+    },
+    "bottom": {
+      "rights": "Todos los derechos reservados.",
+      "privacy": "Privacidad",
+      "terms": "Terminos",
+      "developedBy": "Desarrollado por TuPaginaWeb.pe"
+    }
+  }
+}
