@@ -63,7 +63,7 @@ export function HomeExperience({ locale }: { locale: Locale }) {
                 {copy.heroKicker}
               </motion.p>
               <motion.h1 initial={{ opacity: 0, y: 38 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .1, duration: .8 }} className="cinema-title max-w-4xl text-3xl text-white sm:text-4xl md:text-6xl">
-                {copy.heroTitle}
+                <TypewriterTitle text={copy.heroTitle} />
               </motion.h1>
               <motion.p initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .2, duration: .75 }} className="mt-6 max-w-2xl text-lg leading-8 text-white/80 md:text-xl">
                 {copy.heroText}
@@ -130,8 +130,8 @@ export function HomeExperience({ locale }: { locale: Locale }) {
 
         <div className="shared-route-backdrop relative overflow-hidden">
           <Image src="/pexels-gala-briela-842980063-35925134.jpg" alt="Ruta de cuatrimoto en montana" fill sizes="100vw" className="shared-route-image object-cover" />
-          <div className="absolute inset-0 z-[1] bg-gradient-to-r from-black/74 via-black/48 to-black/38" />
-          <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/28 via-black/10 to-black/52" />
+          <div className="absolute inset-0 z-[1] bg-black/58" />
+          <div className="absolute inset-0 z-[1] bg-gradient-to-r from-black/38 via-transparent to-black/30" />
           <div className="route-floating-field" aria-hidden="true">
             <span className="route-glow-dot dot-a" />
             <span className="route-glow-dot dot-b" />
@@ -142,10 +142,10 @@ export function HomeExperience({ locale }: { locale: Locale }) {
             <div className="pointer-events-none absolute left-0 right-0 top-0 z-[1] h-72 bg-[radial-gradient(ellipse_at_30%_20%,rgba(247,183,51,.16),transparent_44%),radial-gradient(ellipse_at_74%_14%,rgba(239,59,31,.14),transparent_48%)] blur-2xl" />
             <div className="mx-auto max-w-7xl px-5">
               <Reveal className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
-                <div>
+                <div className="section-copy-boost">
                   <p className="text-sm font-black uppercase tracking-[.22em] text-solar">{copy.experiencesKicker}</p>
-                  <h2 className="cinema-title mt-3 text-2xl md:text-4xl">{copy.experiencesTitle}</h2>
-                  <p className="mt-5 max-w-2xl text-lg leading-8 text-white/66">{copy.experiencesText}</p>
+                  <h2 className="cinema-title mt-3 text-2xl text-white md:text-4xl">{copy.experiencesTitle}</h2>
+                  <p className="mt-5 max-w-2xl text-lg leading-8 text-white/82">{copy.experiencesText}</p>
                 </div>
                 <div className="glass rounded-2xl p-3 md:max-w-xl">
                   <div className="mb-2 flex items-center gap-2 text-xs font-black uppercase tracking-[.12em] text-solar">
@@ -228,19 +228,21 @@ export function HomeExperience({ locale }: { locale: Locale }) {
           </section>
         </div>
 
-        <section id="galeria" className="story-chapter section-light overflow-hidden py-28">
+        <section id="galeria" className="story-chapter section-light overflow-hidden py-20">
           <div className="mx-auto max-w-7xl px-5">
             <Reveal>
               <p className="text-sm font-black uppercase tracking-[.22em] text-ember">{copy.galleryKicker}</p>
-              <h2 className="cinema-title mt-3 text-2xl text-slate-950 md:text-4xl">{copy.galleryTitle}</h2>
+              <h2 className="cinema-title mt-3 text-xl text-slate-950 md:text-3xl">{copy.galleryTitle}</h2>
             </Reveal>
-            <div className="mask-fade scrollbar-hide mt-10 flex snap-x gap-5 overflow-x-auto pb-6">
-              {tourPackages.flatMap((pkg) => pkg.gallery).map((src, index) => (
-                <button key={src} className={`group relative shrink-0 snap-center overflow-hidden rounded-[2rem] border border-white/10 ${index % 3 === 0 ? "h-[440px] w-[340px]" : "mt-12 h-[360px] w-[280px]"}`} type="button" aria-label="Open photo">
-                  <Image src={src} alt="Adventure landscape in Cusco" fill sizes="360px" className="object-cover transition duration-700 group-hover:scale-110" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent opacity-0 transition group-hover:opacity-100" />
-                </button>
-              ))}
+            <div className="gallery-marquee mask-fade mt-8 overflow-hidden pb-4">
+              <div className="gallery-track">
+                {[...tourPackages.flatMap((pkg) => pkg.gallery), ...tourPackages.flatMap((pkg) => pkg.gallery)].map((src, index) => (
+                  <button key={`${src}-${index}`} className={`group relative shrink-0 overflow-hidden rounded-[1.5rem] border border-slate-200 bg-slate-100 shadow-sm ${index % 3 === 0 ? "h-[320px] w-[250px]" : "mt-8 h-[270px] w-[220px]"}`} type="button" aria-label="Open photo">
+                    <Image src={src} alt="Adventure landscape in Cusco" fill sizes="280px" className="object-cover transition duration-700 group-hover:scale-110" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/45 to-transparent opacity-0 transition group-hover:opacity-100" />
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
         </section>
@@ -249,10 +251,10 @@ export function HomeExperience({ locale }: { locale: Locale }) {
           <Image src="/pexels-jibanesports-5095992.jpg" alt="Aventura en cuatrimoto" fill sizes="100vw" className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-black/94 via-black/78 to-black/54" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/94 via-black/42 to-black/52" />
-          <div className="relative z-10 mx-auto flex min-h-[62vh] max-w-7xl items-center px-5">
-            <Reveal className="max-w-3xl">
+            <div className="relative z-10 mx-auto flex min-h-[62vh] max-w-7xl items-center px-5">
+            <Reveal className="section-copy-boost max-w-3xl">
               <p className="text-sm font-black uppercase tracking-[.22em] text-solar">{copy.finalKicker}</p>
-              <h2 className="cinema-title mt-4 text-3xl md:text-6xl">{copy.finalTitle}</h2>
+              <h2 className="cinema-title mt-4 text-3xl text-white md:text-6xl">{copy.finalTitle}</h2>
               <button className="magnetic pulse-reserve mt-9 inline-flex items-center gap-3 rounded-full bg-emerald-500 px-8 py-5 font-black text-black" type="button" onClick={() => setSelected(tourPackages[0])}>
                 {copy.reserveWhatsApp} <ArrowRight size={22} />
               </button>
@@ -275,6 +277,37 @@ function Pill({ icon, text }: { icon: React.ReactNode; text: string }) {
     <span className="flex min-h-11 items-center justify-center gap-1 rounded-xl bg-white/10 px-2 text-center text-xs text-white/76 backdrop-blur [&_svg]:text-solar">
       {icon}
       {text}
+    </span>
+  );
+}
+
+function TypewriterTitle({ text }: { text: string }) {
+  const [visibleText, setVisibleText] = useState("");
+
+  useEffect(() => {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduceMotion) {
+      setVisibleText(text);
+      return;
+    }
+
+    setVisibleText("");
+    let index = 0;
+    const startDelay = window.setTimeout(() => {
+      const interval = window.setInterval(() => {
+        index += 1;
+        setVisibleText(text.slice(0, index));
+        if (index >= text.length) window.clearInterval(interval);
+      }, 28);
+    }, 450);
+
+    return () => window.clearTimeout(startDelay);
+  }, [text]);
+
+  return (
+    <span className="typewriter-title" aria-label={text}>
+      <span aria-hidden="true">{visibleText}</span>
+      <span className="typewriter-cursor" aria-hidden="true" />
     </span>
   );
 }

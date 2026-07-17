@@ -11,6 +11,11 @@ export const metadata: Metadata = {
     description: "Conquista el camino hacia uno de los paisajes mas intensos del Cusco.",
     type: "website",
     images: ["/explora-red-valley-logo.jpeg"]
+  },
+  icons: {
+    icon: "/explora-red-valley-logo.jpeg",
+    shortcut: "/explora-red-valley-logo.jpeg",
+    apple: "/explora-red-valley-logo.jpeg"
   }
 };
 
